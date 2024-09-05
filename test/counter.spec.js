@@ -1,7 +1,7 @@
-import { mount } from '@vue/test-utils';
-import Counter from '../src/components/Counter.js';
-import {expect} from 'expect';
-import { nextTick } from 'vue';
+const { mount } = require('@vue/test-utils');
+const {expect} =  require('expect');
+const { nextTick } = require('vue');
+const Counter = require('../src/components/Counter.js');
 
 // Mock SVGElement globally
 if (typeof global.SVGElement === 'undefined') {
@@ -52,3 +52,5 @@ describe('Counter', () => {
      expect(wrapper.find('.count').text()).toBe('1');
   });
 });
+
+// mocha --require test/setup.js test/*.spec.js

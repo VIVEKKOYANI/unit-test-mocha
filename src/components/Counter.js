@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   template: `
     <div>
     <span class="count">{{count}}</span>

@@ -1,4 +1,4 @@
-import { JSDOM } from 'jsdom';
+const { JSDOM } =  require('jsdom');
 
 const { window } = new JSDOM('', { url: 'http://localhost/' });
 
